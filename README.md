@@ -14,8 +14,9 @@ This repository is implementation of [Semi-supervised Multi-task Learning Using 
 
 
 ## Introduction
-
-<img src="resources/model.pdf" width="80" height="80">
+<p align="center">
+<img src="resources/model.png" width="600" height="400">
+</p>
 
 ## Installation
 
