@@ -7,10 +7,10 @@ This repository is implementation of [Semi-supervised Multi-task Learning Using 
 <!-- Table of content-->
 
 ## Table of contents
-* [Introduction](introduction)
-* [Installation](installtion)
-* [Usage](usage)
-* [Contact](contact)
+* [Introduction](#introduction)
+* [Installation](#installtion)
+* [Usage](#usage)
+* [Contact](#contact)
 
 
 ## Introduction
