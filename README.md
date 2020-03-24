@@ -20,7 +20,7 @@ and 2) a sequence-based convolution for the main task of faulty code prediction.
 <p align="center">
 <img src="resources/model.png" width="800" height="300" title="Multi-task learning model">
 </p>
-You can follow this [paper](https://www.google.com) to see the experimental results and discussion.
+You can follow this [I'm an inline-style link](https://www.google.com) to see the experimental results and discussion.
 
 ## Installation
 
