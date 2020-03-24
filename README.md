@@ -8,15 +8,15 @@ This repository is implementation of [Semi-supervised Multi-task Learning Using 
 
 ## Table of contents
 * [Introduction](#introduction)
-* [Installation](#installtion)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Contact](#contact)
 
 
-## Introduction
+##Introduction
 
-## Installation
+##Installation
 
-## Usage
+##Usage
 
-## Contact
+##Contact
