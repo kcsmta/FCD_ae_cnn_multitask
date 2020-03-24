@@ -22,7 +22,7 @@ and 2) a sequence-based convolution for the main task of faulty code prediction.
 <img src="resources/model.png" width="800" height="300" title="Multi-task learning model">
 </p>
 
-You can follow this [paper]() to see the experimental results and discussion.
+You can follow this [paper]() for more details.
 
 ## Installation
 
@@ -46,20 +46,27 @@ source ae-cnn-multitask-env/bin/activate
 ```
 
 ## Usage
+You can change the variable *data_part* in the file *FCD_models/params.py* to 1.0, 0.75, 0.5, and 0.25 corresponding to using the number of labeled data in training phase as 100%, 75%, 50%, and 25%.
 
-**1. Baseline model**
+**1. CNN:** Convolutional neural network (as the classification branch without the autoencoder)
 
-**2. CNN transfer learning**
+**2. CNN_trans:** Convolutional neural network with transfer learning
 
-**3. CNN with AE init**
+**3. AE:** train the autoencoder as parameter initialization for AE_CNN and AE_CNN_Mul
 
-**4. Multi-task model**
+**3. AE_CNN:** We first train the autoencoder and then remain the weights
+for the part 1 of convolutions to train CNN independently. This can
+be considered as a type of self-transfer learning because we initialize the
+weights using the same data but without target label information.
 
-**5. Multi-task model with AE init**
+**4. CNN_Mul:** the autoencoder and CNN are trained simultaneously from scratch.
 
-To visualize embedding vector:
+**5. AE_CNN_Mul:** The autoencoder is pretrained and then we continue training the whole model.
 
-To plot ROC curve:
+
+* To visualize embedding vector:
+
+* To plot ROC curve:
 
 
 ## Contact
