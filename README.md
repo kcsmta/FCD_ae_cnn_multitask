@@ -91,5 +91,5 @@ python plot_roc_multiclasses.py
 
 ## Contact
 Authors: \
-[Anh Phan Viet](): anhpv@lqdtu.edu.vn \
-[Khanh Duy Tung Nguyen]() : tungkhanh@lqdtu.edu.vn
+Anh Phan Viet: anhpv@lqdtu.edu.vn \
+Khanh Duy Tung Nguyen : tungkhanh@lqdtu.edu.vn
