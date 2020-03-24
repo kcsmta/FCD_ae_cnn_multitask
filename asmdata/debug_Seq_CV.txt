@@ -1,0 +1,2 @@
+1 _string pushq
+1 pushq move subq
