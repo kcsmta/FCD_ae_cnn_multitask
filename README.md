@@ -15,6 +15,8 @@ This repository is implementation of [Semi-supervised Multi-task Learning Using 
 
 ## Introduction
 
+<img src="resources/logo.png" width="80" height="80">
+
 ## Installation
 
 ## Usage
