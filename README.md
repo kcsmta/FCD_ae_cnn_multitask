@@ -46,28 +46,48 @@ source ae-cnn-multitask-env/bin/activate
 ```
 
 ## Usage
-You can change the variable *data_part* in the file *FCD_models/params.py* to 1.0, 0.75, 0.5, and 0.25 corresponding to using the number of labeled data in training phase as 100%, 75%, 50%, and 25%.
+You should change the variable *data_part* in the file *FCD_models/params.py* to 1.0, 0.75, 0.5, and 0.25 corresponding to using the number of labeled data in training phase as 100%, 75%, 50%, and 25%.
 
 **1. CNN:** Convolutional neural network (as the classification branch without the autoencoder)
-
+```sh
+python run_train_cnn.py
+```
 **2. CNN_trans:** Convolutional neural network with transfer learning
-
-**3. AE:** train the autoencoder as parameter initialization for AE_CNN and AE_CNN_Mul
-
+```sh
+python run_train_cnn_transfer.py
+```
+**2'. AE:** train the autoencoder as parameter initialization for AE_CNN and AE_CNN_Mul
+```sh
+python run_train_ae.py
+```
 **3. AE_CNN:** We first train the autoencoder and then remain the weights
 for the part 1 of convolutions to train CNN independently. This can
 be considered as a type of self-transfer learning because we initialize the
 weights using the same data but without target label information.
-
+```sh
+python run_finetune_cnn.py
+```
 **4. CNN_Mul:** the autoencoder and CNN are trained simultaneously from scratch.
+```sh
+python run_train_cnn_multi_task.py
+```
 
 **5. AE_CNN_Mul:** The autoencoder is pretrained and then we continue training the whole model.
+```sh
+python run_finetune_cnn_multi_task.py
+```
 
-
-* To visualize embedding vector:
+* To visualize latent embedding vector:
+```sh
+cd visulize_embedding/
+python run_visualize.py
+```
 
 * To plot ROC curve:
-
+```sh
+cd draw_roc/
+python plot_roc_multiclasses.py
+```
 
 ## Contact
 Authors: \
