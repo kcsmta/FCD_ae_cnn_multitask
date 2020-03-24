@@ -14,9 +14,13 @@ This repository is implementation of [Semi-supervised Multi-task Learning Using 
 
 
 ## Introduction
+We proposes a semi-supervised multitask learning framework to overcome the limited data problem for **F**aulty **C**ode **D**etection. 
+The framework has two parts including 1) a convolutional autoencoder performing the auxiliary task that is learning the latent representations of programs 
+and 2) a sequence-based convolution for the main task of faulty code prediction. Our proposed model is shown below:
 <p align="center">
 <img src="resources/model.png" width="800" height="300" title="Multi-task learning model">
 </p>
+You can follow this [paper](link-to-paper) to see the experimental results and discussion.
 
 ## Installation
 
